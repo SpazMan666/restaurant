@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Oswald:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(235, 235, 235);
+    color: #333;
+    font-size: 16px;
+    font-family: 'Oswald';
+}
+
+
+header {
+    min-height: 100vh;
+    /* background-image: url(../images/hero.jpg); */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin-right: 20px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-nav li a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    border: solid 2px orange;
+    margin-right: 17px;
+    padding: 9px 17px;
+    border-radius: 22px;
+    color: orange;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+section {
+    padding: 50px 0px;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+hr {
+    border: solid 3px orange;
+    width: 100px;
+    margin: 20px auto;
+}
+
+.features-info {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.box i {
+    color: orange;
+    margin-left: 130px;
+    font-size: 50px;
+}
+
+.box h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.box p {
+    text-align: center;
+
+}
+
+.meal {
+    padding: 0;
+    margin-bottom: -5px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.meal img {
+    width: 100%;
+    opacity: .6;
+    transform: scale(1.3);
+    transition: all 40ms;
+}
+
+.meal img:hover {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.app-iPhone {
+    width: 40%;
+}
+
+.work:first-child {
+    text-align: right;
+}
+
+.work:last-child {
+    text-align: left;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.step div {
+    border: 2px solid orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 11px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.store img {
+    height: 50px;
+}
+
+
+.city img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.city-info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.city-info i {
+    color: orange;
+    margin-right: 10px;
+}
+
+#testimonials {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.705)), url(../images/back-customers.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+#testimonials i {
+    font-size: 25px;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+#testimonials p {
+    margin-bottom: 17px;
+}
+
+#testimonials img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+
+
+
+
+.pricing {
+    width: 31%;
+    border: solid 1px white;
+
+    border-radius: 20px;
+    line-height: 1.5;
+    margin: 15px;
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.pricing p {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.pricing h4 {
+    font-size: 44px;
+    font-weight: 100;
+    color: orange;
+
+}
+
+.pricing-info i {
+    color: orange;
+    margin-right: 13px;
+    margin-top: 14px;
+}
+
+.pricing-info {
+    display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.pricing-hr {
+    border: solid 1px #333;
+    width: auto;
+    margin: 20px auto;
+}
+
+#sign-up {
+
+    margin: 25px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#sign-up a {
+    border-radius: 40px;
+}
+
+label{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input[type=text],input[type=email],
+select,textarea{
+    margin-bottom: 7px;
+    width: 100%;
+    padding: 5px;
+    border: solid 2px #ddd;
+    border-radius: 6px;
+    font-size: 18px;
+    outline-color: orange;
+}
+
+input[type=checkbox]{
+    margin-bottom: 10px;
+}
+button{
+    border: solid 1px orange;
+    margin-right: 15px;
+    padding: 7px 15px;
+    border-radius: 7px;
+    color: white;
+    background-color: orange;
+}
+button:hover{
+    color: orange;
+    background-color: black;
+}
+
+
+footer{
+    padding: 50px 0px;
+background-color: #333;
+color: white;
+}
+footer p{ text-align: center; 
+ font-weight: 300;}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+}
+
+.footer-nav li {
+    margin-right: 20px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-nav li a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+
+.social-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-nav li {
+    margin-right: 20px;
+}
+
+.social-nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-nav li a:hover {
+    text-decoration: underline;
+    color: orange;
+}
